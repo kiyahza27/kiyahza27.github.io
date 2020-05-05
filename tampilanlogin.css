@@ -1,0 +1,123 @@
+body{
+	background-image: url("image/bg.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.login-form-container {
+    max-width: 400px;
+    width: 100%;
+    z-index: 1;
+    margin: 10px auto;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	box-shadow: 0px 0px 25px 10px black;
+	border-radius: 10px;
+}
+
+.login-form-header {
+    text-align: center;
+	color: white;
+	font-size: 30px;
+}
+
+.login-form .input-container {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+	padding-bottom: 5px;
+}
+.login-form .input {
+	border: 0;
+	width: 400px;
+}
+
+.login-form .forgot-password {
+	float: right;
+	color: white;
+}
+.login-form .rememberme-container {
+	margin-top: 15px;
+	padding: 0;
+	color: white;
+}
+.login-form .rememberme-container input {
+	margin-left: 0;
+}
+.login-form .rememberme span {
+	vertical-align: top;
+}
+.login-form .button {
+	margin-top: 15px;
+    width: 100%;
+    background: #2e7ec7;
+    border: 0;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+	cursor: pointer;
+	transition: background .3s;
+}
+.login-form .button:hover {
+	background: #252020;
+}
+.login-form .button:focus {
+	outline: none;
+}
+
+.login-form .buttonloginas {
+	margin-top: 5px;
+    width: 100%;
+    background: #2e7ec7;
+    border: 0;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+	cursor: pointer;
+	transition: background .3s;
+}
+.login-form .buttonloginas:hover {
+	background: #252020;
+}
+.login-form .buttonloginas:focus {
+	outline: none;
+}
+
+.login-form .register {
+	margin-top: 5px;
+    background: #6E0606;
+    border: 0;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+}
+.login-form .register:hover	{
+	background: #252020;
+}
+
+@media screen and (max-height: 800px) {
+	.login-form-container {
+		margin-top: 0;
+		top: 10px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.login-form-container {
+		left: 5px;
+		margin-left: 5px;
+		min-width: 283px;
+		right: 10px;
+		margin-bottom: 10px;
+		width: auto;
+	}
+	.login-form .input {
+		width: 140px;
+	}
+	.socmed-login .socmed-btn i {
+		margin-right: 5px;
+		width: 19px;
+	}
+}

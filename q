@@ -1,2 +1,0 @@
- 
-  # Penjelasan Berada di Footer #

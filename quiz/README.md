@@ -1,2 +1,2 @@
  
-  #Penjelasan Berada di Footer#
+  # Penjelasan Berada di Footer #

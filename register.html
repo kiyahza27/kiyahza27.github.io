@@ -1,27 +1,90 @@
 <!DOCTYPE html>
+
+<!--REGISTER PAGE-->
  <html>
  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <title>Register Page</title>
     <link rel="stylesheet" href="tampilanregister.css" media="screen" title="no title">
+	<link rel="stylesheet" href="css/intlTelInput.css">
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	
-	<script>
-       $(document).ready(function() {
-          $('select').material_select();
-       });
-    </script>
+	<script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+	<script src="js/intlTelInput.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
 </head>
 
 <body>
-	<header>
-		<img src="image/logo.png" alt="Logo">
-	</header>
 	
+	<!-- Dropdown1 Structure -->
+	<ul id="dropdown1" class="dropdown-content">
+		<li><a href="companyprofile.html">Company Profile</a></li>
+		<li><a href="sitegoals.html">Site Goals</a></li>
+		<li><a href="managementmember.html">Management Member</a></li>
+		<li><a href="howtojoin.html">How to Join</a></li>
+		<li><a href="criteriajob.html">Criteria of Accepted Jobs</a></li>
+		<li><a href="criteriarewards.html">Criteria of Minimum Accepted Rewards</a></li>
+		<li><a href="benefitearlymember.html">Benefit Of Early Member</a></li>
+		<li><a href="jobworkflow.html">Jobs Workflow</a></li>
+		<li><a href="rankcrtiteria.html">Membership Rank and Criteria</a></li>
+		<li><a href="frontpage.html">Front Page</a></li>
+		<li><a href="adminpage.html">Admin</a></li>
+	</ul>
+
+	<!-- Dropdown2 Mobile-Demo Structure -->
+	<ul id="dropdown2" class="dropdown-content">
+		<li><a href="companyprofile.html">Company Profile</a></li>
+		<li><a href="sitegoals.html">Site Goals</a></li>
+		<li><a href="managementmember.html">Management Member</a></li>
+		<li><a href="howtojoin.html">How to Join</a></li>
+		<li><a href="criteriajob.html">Criteria of Accepted Jobs</a></li>
+		<li><a href="criteriarewards.html">Criteria of Minimum Accepted Rewards</a></li>
+		<li><a href="benefitearlymember.html">Benefit Of Early Member</a></li>
+		<li><a href="jobworkflow.html">Jobs Workflow</a></li>
+		<li><a href="rankcrtiteria.html">Membership Rank and Criteria</a></li>
+		<li><a href="frontpage.html">Front Page</a></li>
+		<li><a href="adminpage.html">Admin</a></li>
+	</ul>
+	
+	<!-- Navigasi -->
+	<div class="navbar">
+		<nav>
+			<div class="nav-wrapper">
+				<a class="brand-logo"><img src="image/logo.png" alt="Logo"></a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a class="waves-effect" href="index.html">HOME</a></li>
+					<li><a class="waves-effect" href="#">PROFILE</a></li>
+					<li><a class="waves-effect" href="jobpage.html">JOB</a></li>
+					<li><a class="waves-effect" href="#">TEAM</a></li>
+					<li><a class="waves-effect" href="rank.html">RANK</a></li>
+					<li><a class="waves-effect" href="#">SHOP</a></li>
+					<li><a class="waves-effect" href="login.html">LOGIN</a></li>
+					<li><a class="waves-effect z-depth-4" href="register.html">REGISTER</a></li>
+					<li><a class="dropdown-trigger" data-target="dropdown1">NEW PAGE<i class="material-icons right">arrow_drop_down</i></a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	
+	<ul class="sidenav" id="mobile-demo">
+		<li><a class="waves-effect" href="index.html">HOME</a></li>
+		<li><a class="waves-effect" href="#">PROFILE</a></li>
+		<li><a class="waves-effect" href="jobpage.html">JOB</a></li>
+		<li><a class="waves-effect" href="#">TEAM</a></li>
+		<li><a class="waves-effect" href="rank.html">RANK</a></li>
+		<li><a class="waves-effect" href="#">SHOP</a></li>
+		<li><a class="waves-effect" href="login.html">LOGIN</a></li>
+		<li><a class="waves-effect z-depth-2" href="register.html">REGISTER</a></li>
+		<li><a class="dropdown-trigger" data-target="dropdown2">NEW PAGE<i class="material-icons right">arrow_drop_down</i></a></li>
+	</ul>
 	<!--REGISTER FORM-->
 	
 	<div class="register-form-container" id="register-form">
@@ -33,36 +96,52 @@
 				<h3>Register Form</h3>
 			</div>
 			
-			<form method="post" action="" class="register-form">
+			<form method="post" action="login.html" class="register-form" id="form-login">
 				<div class="input-container">
 					<i class="fa fa-user"></i>
-					Full Name: <input type="text" class="input" name="name" placeholder="Full Name"/>
+					Full Name: <input type="text" class="input" name="name" placeholder="Full Name" required/>
 				</div>
 			
 				<div class="input-container">
 					<i class="fa fa-vcard"></i>
-					NIK: <input type="text" class="input" name="nik" placeholder="NIK"/>
+					NIK: <input type="tel" class="input" name="nik" placeholder="NIK (max 15 numbers)" maxlength="15" required/>
+				</div>
+				
+				<div class="input-container">
+					<i class="fa fa-phone"></i>
+					Telephone: <input type="tel" id="telephone" class="input" name="telephone" placeholder="Telephone (max 15 numbers)" maxlength="15" required/>
+				</div>
+				
+				<div class="input-container">
+					<i class="fa fa-mobile"></i>
+					Phone: <input type="tel" id="phone" class="input" name="phone" placeholder="Phone Number (max 15 numbers)" maxlength="15" required/>
 				</div>
 				
 				<div class="input-container">
 					<i class="fa fa-circle-o"></i>
-					Username: <input type="text" class="input" name="username" placeholder="Username"/>
+					Username: <input type="text" class="input" name="username" placeholder="Username" required/>
 				</div>
 				
 				<div class="input-container">
 					<i class="fa fa-users"></i>
 					Member Type:
-					 <p>
+					<p>
 						<label>
 							<input name="group1" type="radio" checked />
-							<span>Civilian</span>
+							<span class="white-text">Manager</span>
+						</label>
+					</p>
+					<p>
+						<label>
+							<input name="group1" type="radio" checked />
+							<span class="white-text">Civilian</span>
 						</label>
 					</p>
 					
 					<p>
 						<label>
 							<input name="group1" type="radio" checked />
-							<span>Guild Member</span>
+							<span class="white-text">Guild Member</span>
 						</label>
 					</p>
 				</div>
@@ -71,15 +150,14 @@
 					<i class="fa fa-clock-o"></i>
 					Join Period:
 					<div class="row">
-						<label>Materialize Select</label>
-							<select>
-								<option value="" disabled selected>Choose your option</option>
+							<select class="white-text">
+								<option value="" disabled selected >Choose your option</option>
 								<option value="1">1 Month</option>
 								<option value="2">3 Month</option>
 								<option value="3">6 Month</option>
 								<option value="4">1 Year</option>
 							</select>
-					</div?
+					</div>
 				</div>
 				
 				<div class="input-container">
@@ -91,8 +169,7 @@
 					<i class="fa fa-shield"></i>
 					Skill Set:
 					<div class="row">
-						<label>Materialize Multiple Select</label>
-							<select multiple>
+							<select multiple white-text>
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1. Sword Skills</option>
 								<option value="2">2. Axe Skills</option>
@@ -106,12 +183,31 @@
 			
 				<div class="input-container">
 					<i class="fa fa-envelope"></i>
-					Email: <input type="email" class="input" name="email" placeholder="Email"/>
+					Email: <input type="email" class="input" name="email" placeholder="Email" required/>
 				</div>
 				
 				<div class="input-container">
 					<i class="fa fa-lock"></i>
-					Password: <input type="password"  id="login-password" class="input" name="password" placeholder="Password"/>
+					Password: <input type="password"  id="password" class="pass" name="pass" placeholder="Password (min 8 character)" minlength="8" required/>
+					<span id="message1"></span>
+					<p>
+						<label>
+							<input type="checkbox" class="cekbox1"/>
+							<span class="white-text right">Show Password</span> 
+						</label>
+					</p>
+				</div>
+				
+				<div class="input-container">
+					<i class="fa fa-lock"></i>
+					Confirm Password: <input type="password"  id="password2" class="confpass" name="confpass" placeholder="Confirm Password" minlength="8" required/>
+					<span id="message"></span>
+					<p>
+						<label>
+							<input type="checkbox" class="cekbox2"/>
+							<span class="white-text right">Show Password</span> 
+						</label>
+					</p>
 				</div>
 				
 				<div class="input-container">
@@ -121,17 +217,29 @@
 				
 				<div class="input-container">
 					<i class="fa fa-map-marker"></i>
-					Adress: <textarea name="adress"></textarea>
+					Adress: <textarea name="adress" id="text-area" required/></textarea>
+							<input type="text" class="input" name="country" placeholder="Country" required/>
+							<input type="text" class="input" name="state" placeholder="State" required/>
+							<input type="tel" class="input" name="zipcode" placeholder="Zip Code" required/>
+				</div>
+				
+				 <div class="file-field input-field">
+					<div class="btn">
+						<i class="material-icons">attach_file</i><span></span>
+						<input type="file">
+					</div>
+					<div class="file-path-wrapper">
+						<input class="file-path validate" type="text" placeholder="Upload KTP" required/>
+					</div>
 				</div>
 			
-			
-				<input type="submit" name="create-account" value="Create Account" class="button"/>
+				<input type="submit" name="submit" id="submit" value="Create Account" class="button"/>
 		
 			</form>
 			
-			<div class="login">
-				<a href="login.html" class='btn'>
-					<span>Back to Login</span>
+			<div class="back">
+				<a href="index.html" class='btn'>
+					<span>BACK</span>
 				</a>
 			</div>
 			
@@ -143,7 +251,7 @@
 			<!--CONNECTOR WITH SSO-->
 			
 			<div class="sosmed-register">
-				<a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="sosmed-btn-google-btn">
+				<a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="sosmed-btn-google-btn" data-onsuccess="onSignIn">
 					<i class="fa fa-google"></i>
 					<span>Register with Google Account</span>
 				</a>
@@ -163,9 +271,135 @@
 					<span>Register with Github Account</span>
 				</a>
 				
+				<a href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin" class="sosmed-btn-linkedin-btn">
+					<i class="fa fa-linkedin-square"></i>
+					<span>Register with Linkedin Account</span>
+				</a>
 			</div>
 		</div>
 	</div>
+	
+	<footer>
+			<div class="row">
+				
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">FIND US</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">CONTACT US</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text center" href="#!">HELP</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">SUPPROT</a></li>
+					</ul>
+				</div>
+				<div class="col l2 s6">
+					<ul>
+						<li><a class="white-text" href="#!">TERM OF SERVICE</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">Dev_Info</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">Dev_Info</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">Dev_Info</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-adress white-text">
+					<p align="right">ADRESS</p>
+					<p align="right">Cakung, Jakarta</p>
+					<p align="right">Indonesia</p>
+				</div>
+			</div>
+    </footer>
+	
+	<script type = "text/javascript">
+        $(document).ready(function(){
+			$("select").formSelect();
+		});
+	
+		$(document).ready(function(){
+			$(".sidenav").sidenav();
+		});
+		
+		$(".dropdown-trigger").dropdown();
+		
+		$("#telephone").intlTelInput({
+			utilsScript: "js/utils.js"
+		});
+
+		$("#phone").intlTelInput({
+			utilsScript: "js/utils.js"
+		});
+		
+		
+		$(document).ready(function(){		
+			$(".cekbox1").click(function(){
+				if($(this).is(":checked")){
+					$(".pass").attr("type","text");
+				}else{
+					$(".pass").attr("type","password");
+				}
+			});
+		});
+		
+		$(document).ready(function(){		
+			$(".cekbox2").click(function(){
+				if($(this).is(":checked")){
+					$(".confpass").attr("type","text");
+				}else{
+					$(".confpass").attr("type","password");
+				}
+			});
+		});
+		
+		$("#password").on("keyup", function () {
+			var strength = 1;
+			if (this.value.length >= 8){
+				$("#message1").html("Strength").css("color", "white");
+			}
+			if (this.value.match(/[a-z]+/)){
+				$("#message1").html("Strength").css("color", "white");
+			}
+			else 
+				$("#message1").html("Weak").css("color", "white");
+		});
+		
+		$("#password, #password2").on("keyup", function () {
+			if ($("#password").val() == $("#password2").val()) {
+				$("#message").html("Matching").css("color", "green");
+			} else 
+				$("#message").html("Not Matching").css("color", "red");
+		});
+		
+		$("#text-area").val();
+		M.textareaAutoResize($("#text-area"));
+		
+		$(document).ready(function(){
+			$("form").submit(function(){
+				alert("You Have Registered");
+			});
+		});
+		
+    </script>
 	
  </body>
  </html>

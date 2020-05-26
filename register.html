@@ -253,6 +253,8 @@
 			<!--CONNECTOR WITH SSO-->
 			
 			<div class="sosmed-register">
+				<button type="button" class="g-signin2" data-width="280" data-height="40" data-longtitle="true" data-onsuccess="onSignIn">Sign In</button>
+				<button type="button" class="btn btn-danger" onclick="signOut();">Sign out</button>
 				<a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="sosmed-btn-google-btn" data-onsuccess="onSignIn">
 					<i class="fa fa-google"></i>
 					<span>Register with Google Account</span>

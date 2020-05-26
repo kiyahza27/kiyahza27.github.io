@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<!--ADMIN PAGE-->
+ <html>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Admin Page</title>
+	<link rel="stylesheet" type="text/css" href="tampilan.css" media="screen">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+		
+		<ul id="nav-mobile" class="sidenav sidenav-fixed">
+			<li>
+				<div class="user-view">
+					<div class="background">
+					<img src="image/bg.jpg">
+					</div>
+					<a href="#user"><img class="circle" src="image/icon.png"></a>
+					<a href="#name"><span class="black-text name">Admin</span></a>
+					<a href="#email"><span class="black-text email">Admin@gmail.com</span></a>
+				</div>
+			</li>
+				<li><a class="waves-effect z-depth-2" href="adminpage.html"><i class="material-icons">account_circle</i>Your Profile</a>
+				<li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a>
+				<li><div class="divider"></div></li>
+				<li><a class="waves-effect" href="frontpage.html">Home</a></li>
+				<li><a class="waves-effect" href="listuser.html">List of Users</a></li>
+				<li><a class="waves-effect" href="listjob.html">List of Jobs</a></li>
+				<li><a class="waves-effect" href="memberprofile.html">Member Profile</a></li>
+				<li><a class="waves-effect" href="frontpage.html">Log Out</a></li>
+		</ul>
+		
+		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black">menu</i></a>
+
+		<ul class="sidenav" id="mobile-demo">
+			<li>
+				<div class="user-view">
+					<div class="background">
+					<img src="image/bg.jpg">
+				</div>
+					<a href="#user"><img class="circle" src="image/icon.png"></a>
+					<a href="#name"><span class="black-text name">Admin</span></a>
+					<a href="#email"><span class="black-text email">Admin@gmail.com</span></a>
+				</div>
+			</li>
+				<li><a class="waves-effect z-depth-2" href="adminpage.html"><i class="material-icons">account_circle</i>Your Profile</a>
+				<li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a>
+				<li><div class="divider"></div></li>
+				<li><a class="waves-effect" href="frontpage.html">Home</a></li>
+				<li><a class="waves-effect" href="listuser.html">List of Users</a></li>
+				<li><a class="waves-effect" href="listjob.html">List of Jobs</a></li>
+				<li><a class="waves-effect" href="memberprofile.html">Member Profile</a></li>
+				<li><a class="waves-effect" href="frontpage.html">Log Out</a></li>
+		</ul>
+	
+	<main>
+		<div class="section" id="index-banner">
+			<div class="container">
+				<div class="container">
+					<div class="col s12 m8 offset-m1 xl7">
+						<h1 class="header">PROFILE</h1>
+					</div>
+					
+					<div class="col s12 m8 offset-m1 xl7">
+					<div class="row">
+						<div class="col s12 m6">
+							<div class="card">
+								<div class="card-image">
+									<img src="image/avatar.png"><br>
+									<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add_a_photo</i></a>
+								</div>
+								<ul class="collection with-header">
+									<li class="collection-header"><h5>Profile</h5></li>
+									<li class="collection-item"><div>Name<span class="secondary-content">Mark Lee</span></div></li>
+									<li class="collection-item"><div>Username<span class="secondary-content">Admin</span></div></li>
+									<li class="collection-item"><div>Email<span class="secondary-content">Admin@gmail.com</span></div></li>
+									<li class="collection-item"><div>Social Media<a href="#!" class="secondary-content white blue-text"><i class="fa fa-twitter"></i>
+									<i class="fa fa-facebook indigo-text text-darken-4"></i>
+									<i class="fa fa-linkedin-square indigo-text text-darken-4"></i>
+									<i class="fa fa-github black-text"></i></a></div></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col s12 m6 white">
+								<form class="col s12">
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">person</i>
+										<input value="Mark Lee" id="full_name" type="text" class="validate">
+										<label class="active" for="full_name">Full Name</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">assignment_ind</i>
+										<input value="3111987610" id="gender" type="tel" class="validate">
+										<label class="active" for="gender">NIK</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">face</i>
+										<input value="Male" id="gender" type="text" class="validate">
+										<label class="active" for="gender">Gender</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">smartphone</i>
+										<input value="087992735442" id="phone" type="tel" class="validate">
+										<label class="active" for="phone">Phone</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">account_circle</i>
+										<input value="Admin" id="username" type="text" class="validate">
+										<label class="active" for="username">Username</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">email</i>
+										<input value="Admin@gmail.com" id="email" type="email" class="validate">
+										<label class="active" for="email">Email</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">date_range</i>
+										<input value="27 Januari 1993" id="date" type="datetime" class="validate">
+										<label class="active" for="date">Birth Date</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<i class="material-icons prefix">location_on</i>
+										<input value="Greenwich Village" id="adress" type="text" class="validate">
+										<input value="10012" id="zipcode" type="tel" class="validate">
+										<label class="active" for="adress">Adress</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12">
+										<a class="btn-floating waves-effect waves-light red"><i class="material-icons">edit</i></a>
+										<a class="btn-floating waves-effect waves-light red"><i class="material-icons">delete</i></a>
+									</div>
+								</div>
+								</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br>
+		<footer>
+			<div class="row">
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">FIND US</a></li>
+					</ul>
+				</div>
+				<div class="col l2 s6">
+					<ul>
+						<li><a class="white-text" href="#!">CONTACT US</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text center" href="#!">HELP</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">SUPPROT</a></li>
+					</ul>
+				</div>
+				<div class="col l2 s6">
+					<ul>
+						<li><a class="white-text" href="#!">TERM OF SERVICE</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">Dev_Info</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">Dev_Info</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">Dev_Info</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-adress white-text">
+					<p align="right">ADRESS</p>
+					<p align="right">Cakung, Jakarta</p>
+					<p align="right">Indonesia</p>
+				</div>
+			</div>
+		</footer>
+		
+    </main>
+	
+
+	<script type = "text/javascript">
+        $(document).ready(function(){
+			$(".sidenav").sidenav();
+		});
+		
+		$(document).ready(function(){
+			$(".tabs").tabs();
+		});
+    </script>
+
+</body>
+</html>

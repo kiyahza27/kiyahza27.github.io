@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<!--Member Profile Page-->
+ <html>
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Member Profile</title>
+	<link rel="stylesheet" type="text/css" href="tampilan.css" media="screen">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+		
+		<ul id="nav-mobile" class="sidenav sidenav-fixed">
+			<li>
+				<div class="user-view">
+					<div class="background">
+					<img src="image/bg.jpg">
+					</div>
+					<a href="#user"><img class="circle" src="image/icon.png"></a>
+					<a href="#name"><span class="black-text name">Admin</span></a>
+					<a href="#email"><span class="black-text email">Admin@gmail.com</span></a>
+				</div>
+			</li>
+				<li><a class="waves-effect" href="adminpage.html"><i class="material-icons">account_circle</i>Profil</a>
+				<li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Settings</a>
+				<li><div class="divider"></div></li>
+				<li><a class="waves-effect" href="frontpage.html">Home</a></li>
+				<li><a class="waves-effect" href="listuser.html">List of Users</a></li>
+				<li><a class="waves-effect" href="listjob.html">List of Jobs</a></li>
+				<li><a class="waves-effect z-depth-2" href="memberprofile.html">Member Profile</a></li>
+				<li><a class="waves-effect" href="frontpage.html">Log Out</a></li>
+		</ul>
+		
+		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black">menu</i></a>
+
+		<ul class="sidenav" id="mobile-demo">
+			<li>
+				<div class="user-view">
+					<div class="background">
+					<img src="image/bg.jpg">
+				</div>
+					<a href="#user"><img class="circle" src="image/icon.png"></a>
+					<a href="#name"><span class="black-text name">Admin</span></a>
+					<a href="#email"><span class="black-text email">Admin@gmail.com</span></a>
+				</div>
+			</li>
+				<li><a class="waves-effect" href="adminpage.html"><i class="material-icons">account_circle</i>Profil</a>
+				<li><a class="waves-effect" href="#"><i class="material-icons">settings</i>Settings</a>
+				<li><div class="divider"></div></li>
+				<li><a class="waves-effect" href="frontpage.html">Home</a></li>
+				<li><a class="waves-effect" href="listuser.html">List of Users</a></li>
+				<li><a class="waves-effect" href="listjob.html">List of Jobs</a></li>
+				<li><a class="waves-effect z-depth-2" href="memberprofile.html">Member Profile</a></li>
+				<li><a class="waves-effect" href="frontpage.html">Log Out</a></li>
+		</ul>
+	
+	<main>
+		<div class="section" id="index-banner">
+			<div class="container">
+				<h1 class="header center">MEMBER PROFILE</h1>
+					<table class="responsive-table highlight white">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>NIK</th>
+								<th>Phone</th>
+								<th>Username</th>
+								<th>Member Type</th>
+								<th>Join Period</th>
+								<th>Email</th>
+								<th>Adress</th>
+								<th>Edit</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>Alvin</td>
+								<td>12345678</td>
+								<td>081273726892</td>
+								<td>alvin2020</td>
+								<td>Civilian</td>
+								<td>3 month</td>
+								<td>alvin@gmail.com</td>
+								<td>st. rose 3 <p>1320</p></td>
+								<td><a class="material-icons" href="#">edit</a><a class="material-icons" href="#">delete</a></td>
+							</tr>
+							<tr>
+								<td>Kai</td>
+								<td>898654231</td>
+								<td>081982627617</td>
+								<td>kaisoo1213</td>
+								<td>Manager</td>
+								<td>1 year</td>
+								<td>kaisoo1213@gmail.com</td>
+								<td>st. jasmine 2 <p>1190</p></td>
+								<td><a class="material-icons" href="#">edit</a><a class="material-icons" href="#">delete</a></td>
+							</tr>
+							<tr>
+								<td>Kevin</td>
+								<td>823665151</td>
+								<td>081726116625</td>
+								<td>kevin123</td>
+								<td>Guild Member</td>
+								<td>6 month</td>
+								<td>kevin123@gmail.com</td>
+								<td>st. tulip 2 <p>1980</p></td>
+								<td><a class="material-icons" href="#">edit</a><a class="material-icons" href="#">delete</a></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><a class="btn-floating btn-large pulse" href="#"><i class="material-icons">person_add</i></a></td>
+							</tr>
+							</tbody>
+					</table>
+					
+			</div>
+		</div>
+		
+		<footer>
+			<div class="row">
+				
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">FIND US</a></li>
+					</ul>
+				</div>
+				<div class="col l2 s6">
+					<ul>
+						<li><a class="white-text" href="#!">CONTACT US</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text center" href="#!">HELP</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">SUPPROT</a></li>
+					</ul>
+				</div>
+				<div class="col l2 s6">
+					<ul>
+						<li><a class="white-text" href="#!">TERM OF SERVICE</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">Dev_Info</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">Dev_Info</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">Dev_Info</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-adress white-text">
+					<p align="right">ADRESS</p>
+					<p align="right">Cakung, Jakarta</p>
+					<p align="right">Indonesia</p>
+				</div>
+			</div>
+		</footer>
+    </main>
+	
+
+	<script type = "text/javascript">
+        $(document).ready(function(){
+			$('.sidenav').sidenav();
+		});
+    </script>
+
+</body>
+</html>

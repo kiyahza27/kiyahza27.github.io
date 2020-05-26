@@ -2,187 +2,99 @@ body {
 	background-image: url("image/bg.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height : 600px;
-	width : 800px;
-}
-
-.main{
+	background-size:cover;
 	min-height: 100%;
-	max-width: 1080px;
-    position: relative;
+    flex-direction: column;	
 }
 
-.navigasi {
-	width: 950px;
-	margin:25px auto;
+main{
+	display:flex;
 }
 
-nav.menu ul {
-	list-style: none;
-	padding:0;
-	width: 1347px;
+table.responsive-table{
+	margin-left:140px;
+	margin-right:100px;
 }
 
-nav.menu ul li {
-	float:left;
+.dropdown-content a{
+	font-family: berlin sans fb;
+	font-size: 20px;
 }
 
-nav.menu ul a {
-	padding:20px;
-	display:block;
-	margin-top: 20px;
-	padding-left: 40px;
-	padding-right: 40px;
-	font-weight:600;
-	font-size: 25px;
-	color:white;
-	text-decoration: none;
+.navbar .nav-wrapper{
+	background-color: #224070;
+}
+
+.nav-wrapper ul a {
+	font-family: berlin sans fb;
+	padding-left: 30px;
+	padding-right: 25px;
+	font-size: 15px;
+}
+
+.row .col .collection a{
+	background: rgba(0,0,0,0.5);
+}	
+
+.row .col .collapsible a{
+	background: rgba(0,0,0,0.5);
+	height:43px;
+}	
+
+.container h1{
+	font-family: berlin sans fb;
+	
+}
+
+.row h3{
+	background: rgba(0,0,0,0.5);
+	padding-bottom:5px;
+	font-family: berlin sans fb;
+	width:50%;
+
+}
+
+.row a.btn-large{
+	background: rgba(0,0,0,0.5);
 	font-family: mistral;
+	font-size:30px;
+	margin:0px;
 }
 
-nav.menu ul a:hover {
-	text-decoration: underline;
-	background:#224070;
+footer {
+	background: #224070;
+	margin-bottom:0px;
+	display: flex;
 }
 
-.isi {
-	width:600px;
-	padding:10px;
-	margin:10px;
-	font-size: 35px;
+footer .row{
+	background-color: #224070;
+	font-family: berlin sans fb;
+	margin-left:10px;
 }
 
-.home {
-	float:left;
-}
-
-.isi h1 {
-	margin-top:10px;
-	margin:0 0 15px;
-	font-weight: normal;
-	color: #0B1C38;
+.page-footer .footer-adress{
+	background-color: #224070;
 	font-family: berlin sans fb;
 }
-
-.kotak {
-	display: block;
-	background: rgba(0,0,0,0.5);
-	width: 500px;
-    padding-left:12px;
-	padding-top:5px;
-	padding-bottom:5px;
-	margin-top:-20px;
-	margin-left: 18px;
-	color: white;
+ .footer-adress{
+	margin-right:30px;		
 }
 
-.button {
-	background: rgba(0,0,0,0.5);
-	width: 200px;
-	padding-left: 10px;
-	font-size: 40px;
-	color: white;
-	margin-top: 20px;
-	margin-left: 320px;
-	font-family: mistral;
-}
-
-.button a {
-	font-size: 50px;
-	color:white;
-	text-decoration: none;
-	
-}	
-
-.footer {
-	width: 950px;
-}
-
-.box {
-	clear: both;
-	font-size: 15px;
-    padding: 10px;
-	margin-top: 72px;
-}
-
-.box ul{
-	overflow:hidden;
-	color:white;
-	list-style: none;
-	float:left;
-	width: 1300px;
-	margin:0 0 10px;
-	background: #224070;
-}
-
-.box ul li {
-	float:left;
-}
-
-.box ul a {
-	padding:15px;
+main footer{
+	margin-left:300px;
 	display:block;
-	font-weight:600;
-	font-size: 15px;
-	color:white;
-	text-decoration: none;
-	font-family: Georgia;
-}	
-
-.box ul p{
-	margin-right:10px;
-	font-size: 10px;
-	
 }
 
-@media screen and (max-width: 800px) {
-
-	nav.menu ul {
-		width: 100%;
-	}
-
-	nav.menu ul {
-		float:inherit;
-	}
-
-	nav.menu ul li {
-		float:inherit;
+@media screen and (max-width: 1000px) {
+	main footer{
 		margin:0;
-	}
-
-	nav.menu ul a {
-		padding:15px;
-		font-size: 16px;
-		border-top:1px solid #224070;
-	}
-
-	.home {
-		width:90%;
-	}
-
-	.isi {
-		float:inherit;
-		margin:0 auto 25px;
 		width:100%;
-		padding:2%;  
 	}
 	
-	.box {
-		float:inherit;
-		width:200px auto;
+	table.responsive-table{
+		margin-left:0px;
+		margin-right:0px;
 	}
 }
 
-
-@media screen and (max-width: 400px) {
-
-	nav.menu ul a {
-		padding:15px;
-		font-size: 14px;
-	}
-
-	.isi {
-		margin:25px auto;
-	}
-
-}

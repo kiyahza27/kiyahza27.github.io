@@ -1,64 +1,153 @@
 <!DOCTYPE html>
 
+<!--INDEX-->
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<title>Heroes Battle</title>
 	<link rel="stylesheet" type="text/css" href="tampilan.css" media="screen">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type = "text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
-<body>
 
-<div id="main">
-	<div class="navigasi">
-		<nav class="menu">
-			<ul>
-				<li><img src="image/logo.png" alt="Logo"></li>	
-				<li><a class="active" href="index.html">HOME</a></li>
-				<li><a href="#task">TASK</a></li>
-				<li><a href="#teams">TEAMS</a></li>
-				<li><a href="#rank">RANK</a></li>
-				<li><a href="login.html">LOGIN</a></li>
-				<li><a href="register.html">REGISTER</a></li>
-			</ul>
+<body>	
+	<!-- Dropdown1 Structure -->
+	<ul id="dropdown1" class="dropdown-content">
+		<li><a href="companyprofile.html">Company Profile</a></li>
+		<li><a href="sitegoals.html">Site Goals</a></li>
+		<li><a href="managementmember.html">Management Member</a></li>
+		<li><a href="howtojoin.html">How to Join</a></li>
+		<li><a href="criteriajob.html">Criteria of Accepted Jobs</a></li>
+		<li><a href="criteriarewards.html">Criteria of Minimum Accepted Rewards</a></li>
+		<li><a href="benefitearlymember.html">Benefit Of Early Member</a></li>
+		<li><a href="jobworkflow.html">Jobs Workflow</a></li>
+		<li><a href="rankcrtiteria.html">Membership Rank and Criteria</a></li>
+		<li><a href="frontpage.html">Front Page</a></li>
+		<li><a href="adminpage.html">Admin</a></li>
+	</ul>
+
+	<!-- Dropdown2 Mobile-Demo Structure -->
+	<ul id="dropdown2" class="dropdown-content">
+		<li><a href="companyprofile.html">Company Profile</a></li>
+		<li><a href="sitegoals.html">Site Goals</a></li>
+		<li><a href="managementmember.html">Management Member</a></li>
+		<li><a href="howtojoin.html">How to Join</a></li>
+		<li><a href="criteriajob.html">Criteria of Accepted Jobs</a></li>
+		<li><a href="criteriarewards.html">Criteria of Minimum Accepted Rewards</a></li>
+		<li><a href="benefitearlymember.html">Benefit Of Early Member</a></li>
+		<li><a href="jobworkflow.html">Jobs Workflow</a></li>
+		<li><a href="rankcrtiteria.html">Membership Rank and Criteria</a></li>
+		<li><a href="frontpage.html">Front Page</a></li>
+		<li><a href="adminpage.html">Admin</a></li>
+	</ul>
+	
+	<!-- Navigasi -->
+	<div class="navbar">
+		<nav>
+			<div class="nav-wrapper">
+				<a class="brand-logo"><img src="image/logo.png" alt="Logo"></a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a class="waves-effect z-depth-4" href="index.html">HOME</a></li>
+					<li><a class="waves-effect" href="jobpage.html">JOB</a></li>
+					<li><a class="waves-effect" href="#">TEAM</a></li>
+					<li><a class="waves-effect" href="rank.html">RANK</a></li>
+					<li><a class="waves-effect" href="#">SHOP</a></li>
+					<li><a class="waves-effect" href="login.html">LOGIN</a></li>
+					<li><a class="waves-effect" href="register.html">REGISTER</a></li>
+					<li><a class="dropdown-trigger" data-target="dropdown1">NEW PAGE<i class="material-icons right">arrow_drop_down</i></a></li>
+				</ul>
+			</div>
 		</nav>
-	<div class="home">
-		<div class="isi">
-			<h1> PLAY & GET </h1>
-			<h1> HIGHEST RANK </h1>
+	</div>
+	
+	<ul class="sidenav" id="mobile-demo">
+		<li><a class="waves-effect z-depth-2" href="index.html">HOME</a></li>
+		<li><a class="waves-effect" href="jobpage.html">JOB</a></li>
+		<li><a class="waves-effect" href="#">TEAM</a></li>
+		<li><a class="waves-effect" href="rank.html">RANK</a></li>
+		<li><a class="waves-effect" href="#">SHOP</a></li>
+		<li><a class="waves-effect" href="login.html">LOGIN</a></li>
+		<li><a class="waves-effect" href="register.html">REGISTER</a></li>
+		<li><a class="dropdown-trigger" data-target="dropdown2">NEW PAGE<i class="material-icons right">arrow_drop_down</i></a></li>
+	</ul>
+	
+	<div class="container">
+		<h1 class="header brown-text text-darken-4">PLAY & GET</h1>
+		<h1 class="header brown-text text-darken-4">HIGHEST RANK</h1>
+		<div class="row">
+			<h3 class="header white-text">Play and join with teams to get highest rank</h3>
+        </div>
+		<div class="row center">
+			<a href="login.html" id="button" class="btn-large waves-effect"><i class="fa fa-gamepad"></i> PLAY <i class="fa fa-gamepad"></i></a>
 		</div>
-		
-		<div class="kotak">
-				<h2> Play and join with teams to get highest rank </h2>
-        </div>
-		
-		<div class="button">
-				<i class="fa fa-gamepad"></i>
-				<a href="login.html" class='tombol'>PLAY</a>
-				<i class="fa fa-gamepad"></i>
-        </div>
-		
-	<div id="footer">
-		<div class="box">
-			<ul>
-				<li><a href="#">FIND US</a></i></li>
-				<li><a href="#">CONTACT US</a></li>
-				<li><a href="#">HELP</a></li>
-				<li><a href="#">SUPPORT</a></li>
-				<li><a href="#">TERM OF SERVICE</a></li>
-				<li><a href="abouthome.html">About Home Page</a></li>
-				<li><a href="aboutlogin.html">About Login Page</a></li>
-				<li><a href="aboutregister.html">About Register Page</a></li>
-				<p align="right">ADRESS</p>
-				<p align="right">Cakung, Jakarta</p>
-				<p align="right">Indonesia</p>
-				
-			</ul>
+		<br>
 	</div>
 		
-</div>
+	<footer>
+			<div class="row">
+				
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">FIND US</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">CONTACT US</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text center" href="#!">HELP</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="#!">SUPPROT</a></li>
+					</ul>
+				</div>
+				<div class="col l2 s6">
+					<ul>
+						<li><a class="white-text" href="#!">TERM OF SERVICE</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="abouthome.html">Dev_Info</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="aboutlogin.html">Dev_Info</a></li>
+					</ul>
+				</div>
+				<div class="col l1 s6">
+					<ul>
+						<li><a class="white-text" href="boutregister.html">Dev_Info</a></li>
+					</ul>
+				</div>
+				
+				<div class="footer-adress white-text">
+					<p align="right">ADRESS</p>
+					<p align="right">Cakung, Jakarta</p>
+					<p align="right">Indonesia</p>
+				</div>
+			</div>
+    </footer>
+	
+	<script type = "text/javascript">
+		$(document).ready(function(){
+			$(".sidenav").sidenav();
+		});
+		
+		
+		$(".dropdown-trigger").dropdown(); 
+    </script>
+	
 </body>
 </html>

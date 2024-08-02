@@ -1,2 +1,1 @@
-Tugas Web Development
-Membuat duplikat Website Gojek menggunakan HTML
+Tugas Web Development - Membuat duplikat Website Gojek menggunakan HTML
